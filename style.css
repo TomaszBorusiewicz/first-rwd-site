@@ -1,0 +1,131 @@
+/*########## Default ###############*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    line-height: 1;
+}
+
+nav,
+header,
+footer,
+main,
+section,
+article {
+    display: block;
+}
+
+article {
+    padding: 4% 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#section-1-gradient {
+    background: linear-gradient(#076DFF, #65a5ff);
+}
+
+.form-section {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.form-section h1 {
+    color: white;
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    text-align: left;
+    margin: 3% 0;
+}
+
+input[type="text"],
+input[type="password"] {
+    font-size: 20px;
+    padding: 5px;
+    min-width: 100px;
+    border-radius: 7px;
+}
+
+/*########## Navbar ###################*/
+
+.top-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #eee;
+}
+
+.top-nav {
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav li {
+    list-style-type: none;
+}
+
+.top-nav li:last-child {
+    margin-left: auto;
+    display: none;
+}
+
+.top-nav li a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 14px;
+    text-transform: uppercase;
+}
+
+.top-nav li a:hover {
+    background-color: #0080ff;
+}
+
+/*############## Mobile ##########################*/
+
+@media screen and (max-width:680px) {
+    .top-nav {
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .top-nav li:not(:first-child) {
+        display: none;
+    }
+    .top-nav li:last-child {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .top-nav.responsive li:not(:last-child) {
+        display: list-item;
+        width: 100%;
+    }
+    .top-nav.responsive li a {
+        width: inherit;
+    }
+    article {
+        display: flex;
+        flex-direction: column;
+    }
+    article section {
+        margin: 15px;
+    }
+    .yt-container iframe {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        margin: 0;
+    }
+}
