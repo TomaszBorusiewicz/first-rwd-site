@@ -15,3 +15,5 @@ function openCloseNav() {
 
 var navIcon = document.querySelector(".open-nav");
 navIcon.addEventListener("click", openCloseNav, false);
+
+
