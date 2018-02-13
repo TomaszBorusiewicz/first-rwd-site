@@ -36,7 +36,7 @@ article {
 
 .form-section h1 {
     color: white;
-    font-size: 3rem;
+    font-size: 48px;;
     margin-top: 0;
 }
 
@@ -60,7 +60,7 @@ input[type="password"] {
 
 .header {
     text-align: center;
-    font-size: 2rem;
+    font-size: 28px;
 }
 
 .flex-direction-column {
@@ -156,7 +156,7 @@ input[type="password"] {
 
 /*############## Mobile ##########################*/
 
-@media screen and (max-width:680px) {
+@media  screen and (max-width:768px) {
     .top-nav {
         justify-content: flex-start;
         flex-direction: column;
