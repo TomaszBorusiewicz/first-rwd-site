@@ -156,7 +156,11 @@ input[type="password"] {
 
 /*############## Mobile ##########################*/
 
+<<<<<<< HEAD
 @media  screen and (max-width:768px) {
+=======
+@media screen and (max-device-width:680px) {
+>>>>>>> 946d0350cc7ef461e0e949c813053dc9ce79cb9b
     .top-nav {
         justify-content: flex-start;
         flex-direction: column;
